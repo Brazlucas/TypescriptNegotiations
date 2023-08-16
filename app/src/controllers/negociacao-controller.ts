@@ -24,11 +24,11 @@ export class NegociacaoController {
             Zé, você já viu isso?
         */
         const negociacao = Negociacao.criaDe(
-            this.inputData.value, 
+            this.inputData.value,
             this.inputQuantidade.value,
             this.inputValor.value
         );
-     
+
         if (!this.ehDiaUtil(negociacao.data)) {
             this.mensagemView
                 .update('Apenas negociações em dias úteis são aceitas');
@@ -41,7 +41,7 @@ export class NegociacaoController {
     }
 
     private ehDiaUtil(data: Date) {
-        return data.getDay() > DiasDaSemana.DOMINGO 
+        return data.getDay() > DiasDaSemana.DOMINGO
             && data.getDay() < DiasDaSemana.SABADO;
     }
 
