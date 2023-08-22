@@ -5,7 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 import { View } from './view.js';
-import { escape } from "../decorators/escape";
+import { escape } from "../decorators/escape.js";
 export class NegociacoesView extends View {
     template(model) {
         return `
