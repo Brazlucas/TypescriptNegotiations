@@ -4,8 +4,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+import { escapar } from '../decorators/escapar.js';
 import { View } from './view.js';
-import { escape } from "../decorators/escape.js";
 export class NegociacoesView extends View {
     template(model) {
         return `
@@ -42,5 +42,6 @@ export class NegociacoesView extends View {
     }
 }
 __decorate([
-    escape
+    escapar
 ], NegociacoesView.prototype, "template", null);
+//# sourceMappingURL=negociacoes-view.js.map
